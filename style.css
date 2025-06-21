@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%); /* Default text color (gray 950) */
+  line-height: 1.6;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Color Variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+/* Typography */
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: var(--gray-950);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+
+h1:hover,
+h1:focus {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-container {
+  max-width: 23rem;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid black;
+  border-radius: 0.925rem;
+  box-shadow: 7px 7px 0px black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-img {
+  max-width: 100%;
+  border: 1px solid white;
+  border-radius: 0.625rem;
+  margin-bottom: 1.2rem;
+}
+
+.intro {
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 700;
+  width: fit-content;
+  padding: 0.35rem;
+  border: 0.063rem solid whitesmoke;
+  border-radius: 0.325rem;
+  font-size: 0.725rem;
+  margin-bottom: 0.55rem;
+}
+
+.name {
+font-size: 0.925rem;
+}
+
+.image-avatar {
+  max-width: 100%;
+  width: 1.75rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--gray-950);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.image-avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-para {
+  margin-bottom: 0.95rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray-950);
+}
+
+a:hover,
+a:focus {
+  color: hsl(47, 88%, 63%);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--gray-950);
+  outline-offset: 4px;
+}
+
+.blog-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 0 var(--gray-950);
+}
+
+@media (max-width: 340px) {
+  .blog-container {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .main-para {
+    font-size: 0.95rem;
+  }
+
+  .image-avatar {
+    width: 1.75rem;
+  }
+}
