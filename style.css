@@ -60,7 +60,7 @@ h1 {
 .blog-container {
   max-width: 23rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   background-color: hsl(0, 0%, 100%);
   border: 1px solid black;
   border-radius: 0.925rem;
