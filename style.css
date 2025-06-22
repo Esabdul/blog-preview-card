@@ -55,7 +55,6 @@ cursor: pointer;
   border: 1px solid black;
   border-radius: 0.925rem;
   box-shadow: 7px 7px 0px black;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .blog-img-container {
@@ -133,7 +132,12 @@ h1 {
     padding: 0.75rem;
   }
 }
+
 @media (prefers-reduced-motion: no-preference) {
+  .blog-container {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
   .blog-container:hover {
     transform: translateY(-5px);
     box-shadow: 10px 10px 0 var(--gray-950);
