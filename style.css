@@ -41,10 +41,10 @@ p {
   color: var(--gray-500);
   margin-bottom: 1rem;
 }
-h1 a:hover,
-h1 a:focus { 
-color: var(--yellow); 
-cursor: pointer;
+
+h1 {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  margin-bottom: 0.75rem;
 }
 
 .blog-container {
@@ -116,6 +116,12 @@ p,
   font-size: clamp(0.9rem, 1.8vw, 1rem);
 }
 
+h1 a:hover,
+h1 a:focus { 
+color: var(--yellow); 
+cursor: pointer;
+}
+
 a:hover,
 a:focus {
   color: hsl(47, 88%, 63%);
@@ -124,11 +130,6 @@ a:focus {
 a:focus-visible {
   outline: 2px solid var(--gray-950);
   outline-offset: 4px;
-}
-
-h1 {
-  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 21.25em) {
