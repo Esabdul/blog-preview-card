@@ -116,6 +116,11 @@ p,
   font-size: clamp(0.9rem, 1.8vw, 1rem);
 }
 
+a:focus-visible {
+  outline: 2px solid var(--gray-950);
+  outline-offset: 4px;
+}
+
 h1 a:hover,
 h1 a:focus { 
 color: var(--yellow); 
@@ -127,10 +132,7 @@ a:focus {
   color: hsl(47, 88%, 63%);
 }
 
-a:focus-visible {
-  outline: 2px solid var(--gray-950);
-  outline-offset: 4px;
-}
+
 
 @media (max-width: 21.25em) {
   .blog-container {
